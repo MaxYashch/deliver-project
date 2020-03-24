@@ -5,7 +5,7 @@
 				<select name="lang">
 					<option selected value="en">English</option>
 					<option value="ru">Russian</option>
-					<option value="pol">Polish</option>
+					<div value="pol">Polish</div>
 				</select>
 			</div>
 			<div class="top-right">
@@ -29,12 +29,12 @@
 
 	<div class="header-bottom">
 		<div class="container">
-			<div class="header-bottom__column">
-				<a href="" class="header-bottom__logo">
-					<img src="img/logo.png" alt="" />
-				</a>
+
+			<div class="header-bottom__logo">
+				<a href=""><img src="img/logo.png" alt="" /></a>
 			</div>
-			<div class="header-bottom__column">
+
+			<div class="header-bottom-menu">
 				<nav class="header-bottom__items">
 					<ul class="header-bottom__list">
 						<li><a href="#" class="menu__link">Express</a></li>
@@ -45,10 +45,15 @@
 						<li><a href="#" class="menu__link">About</a></li>
 					</ul>
 				</nav>
-			</div>
-			<div class="header-bottom__column">
-				<input autocomplete="off" type="text" name="search" data-value="" class="header-bottom__search"/>
-			</div>
+			</div>			
+			
+    		<form action="" class="header-bottom-search-form">
+				<img src="img/search.png" alt="" />
+				<input autocomplete="off" type="text" name="search" data-value="" class="header-bottom-search-form__input"/>
+				<button type="button" class="header-bottom-search-form__close"></button>
+				<button type="submit" class="header-bottom-search-form__submit">Search</button>
+			</form>			
+			
 		</div>
 	</div>	
 </header>

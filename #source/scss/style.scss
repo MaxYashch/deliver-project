@@ -49,6 +49,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	overflow: hidden;
 	@include flexbox();
 	flex-direction: column;
+	background-color: #000000;
 }
 //</ОБОЛОЧКА>===========================================================================================================
 
@@ -58,6 +59,8 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	max-width:1170px;
 	margin: 0 auto;
 	width: 100%;
+	@include flexbox();
+	position: relative;
 	
 	
 	@media (max-width:767px){max-width: 750px;}
