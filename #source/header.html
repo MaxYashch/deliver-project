@@ -77,14 +77,28 @@
 				</div>
 
 				
-				<form action="" class="header-bottom-search-form">
-					<img src="img/search.png" alt="" />
-					<input autocomplete="off" type="text" name="search" data-value="" class="header-bottom-search-form__input"/>
-					<button type="button" class="header-bottom-search-form__close"></button>
-					<button type="submit" class="header-bottom-search-form__submit">Search</button>
+				<form action="" class="header-bottom-search-form">					
+					<!-- <input autocomplete="off" type="text" name="search" data-value="" class="header-bottom-search-form__input"/>
+					<button type="reset" class="header-bottom-search-form__close"></button> -->
+					<!-- <input type="text" class="header-bottom-search-form__field" placeholder="Search for ..."> -->
+					
+					
+					<button onclick="slide()" type="submit" class="header-bottom-search-form__submit">
+						<img src="img/search.png" alt="" />
+					</button>
 				</form>			
 			</div>
+
+			
 		</div>
-	</div>	
+	</div>
+	<div class="header-search hide">
+		<div class="container">
+			<div class="header-search-field">
+				<input type="text" class="header-search-field__text" placeholder="Search for ...">
+				<button type="submit" class="header-search-field__button">Search</button>
+			</div>
+		</div>
+	</div>
 </header>
                                                   

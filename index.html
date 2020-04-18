@@ -3,10 +3,8 @@
 <head>
 	<title>Deliver</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">
-		
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
-		
+	<meta name="format-detection" content="telephone=no">		
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">		
 	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
@@ -91,15 +89,29 @@
 				</div>
 
 				
-				<form action="" class="header-bottom-search-form">
-					<img src="img/search.png" alt="" />
-					<input autocomplete="off" type="text" name="search" data-value="" class="header-bottom-search-form__input"/>
-					<button type="button" class="header-bottom-search-form__close"></button>
-					<button type="submit" class="header-bottom-search-form__submit">Search</button>
+				<form action="" class="header-bottom-search-form">					
+					<!-- <input autocomplete="off" type="text" name="search" data-value="" class="header-bottom-search-form__input"/>
+					<button type="reset" class="header-bottom-search-form__close"></button> -->
+					<!-- <input type="text" class="header-bottom-search-form__field" placeholder="Search for ..."> -->
+					
+					
+					<button onclick="slide()" type="submit" class="header-bottom-search-form__submit">
+						<img src="img/search.png" alt="" />
+					</button>
 				</form>			
 			</div>
+
+			
 		</div>
-	</div>	
+	</div>
+	<div class="header-search hide">
+		<div class="container">
+			<div class="header-search-field">
+				<input type="text" class="header-search-field__text" placeholder="Search for ...">
+				<button type="submit" class="header-search-field__button">Search</button>
+			</div>
+		</div>
+	</div>
 </header>
                                                   
 		<div class="mainblock">			
@@ -275,31 +287,77 @@
 						</div>
 						<div class="form-body__item">
 							<div class="form-body__item-title">Track your shipment</div>							
-							<button type="" class="form-body__item-button">
+							<button type="" class="form-body__item-button accordion">
 								<img src="img/arrow-red.png" alt="">
 							</button>							
 						</div>
+						<div class="panel form-body__item-list-active content">
+							<div class="form-body__item-list-active-title"><span>International Services to Another Country</span></div>
+							<div class="form-body__item-list-active-points">
+								<ul>
+									<li>
+										<a href="#"><span>Emergency</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Time Critical</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Less Urgent</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
 						<div class="form-body__item">
 							<div class="form-body__item-title">New login</div>							
-							<button type="" class="form-body__item-button">
+							<button type="" class="form-body__item-button  accordion">
 								<img src="img/arrow-red.png" alt="">
 							</button>
+						</div>
+						<div class="panel form-body__item-list-active content">
+							<div class="form-body__item-list-active-title"><span>International Services to Another Country</span></div>
+							<div class="form-body__item-list-active-points">
+								<ul>
+									<li>
+										<a href="#"><span>Emergency</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Time Critical</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Less Urgent</span></a>
+									</li>
+								</ul>
+							</div>
 						</div>
 						<div class="form-body__item">
 							<div class="form-body__item-title">Find Dhl point</div>							
-							<button type="" class="form-body__item-button">
+							<button type="" class="form-body__item-button  accordion">
 								<img src="img/arrow-red.png" alt="">
 							</button>
-						</div>						
+						</div>
+						<div class="panel form-body__item-list-active content">
+							<div class="form-body__item-list-active-title"><span>International Services to Another Country</span></div>
+							<div class="form-body__item-list-active-points">
+								<ul>
+									<li>
+										<a href="#"><span>Emergency</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Time Critical</span></a>
+									</li>
+									<li>
+										<a href="#"><span>Less Urgent</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>					
 						<div class="form-body__item form-body__form-item_active">
 							<div class="form-body__item-title form-body__item-title_active">find a service</div>							
-							<button type="" class="form-body__item-button form-body__item-button_active">
+							<button type="" class="accordion form-body__item-button form-body__item-button_active">
 								<img src="img/arrow-form-yellow.png" alt="">
-							</button>
-
-							
+							</button>							
 						</div>
-						<div class="form-body__item-list-active">
+						<div class="panel form-body__item-list-active content">
 							<div class="form-body__item-list-active-title"><span>International Services to Another Country</span></div>
 							<div class="form-body__item-list-active-points">
 								<ul>
@@ -441,6 +499,6 @@
 	</div>
 </footer>
 	</div>	
-	
+	<script src="js/script.js"></script>
 </body>
 </html>

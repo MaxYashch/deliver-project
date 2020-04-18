@@ -68,7 +68,6 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 
 //<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 //@import "popup.scss";
-@import "baguetteBox.scss";
 @import "header.scss";
 @import "footer.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
@@ -76,7 +75,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
 .mainblock {
-	background: linear-gradient(45deg, #b90000 25%, rgba(255, 203, 0, 0) 70%), url("../../img/bg.png") no-repeat;	
+	background: linear-gradient(45deg, #b90000 25%, rgba(255, 203, 0, 0) 70%), url("../../img/bg.png") no-repeat  center / cover;	
 	&__text {
 		@include flexbox();		
 		margin-top: 179px;
@@ -369,7 +368,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 //===================================================================================================================
 .video-block {	
 	height: 700px;
-	background: linear-gradient(0deg, rgba(255,203,0,0.7019607843137255) 0%, rgba(185,0,0,0) 70%), url("../../img/bg-video-block.png") no-repeat;	
+	background: linear-gradient(0deg, rgba(255,203,0,0.7019607843137255) 0%, rgba(185,0,0,0) 70%), url("../../img/bg-video-block.png") no-repeat center / cover;	
 	padding-top: 151px;
 }
 
@@ -398,7 +397,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	border: 2px solid #ffcc00;
 	&::after{			
 		content: '';
-		background: url("../img/button-video-block.png") 0 0 no-repeat;	
+		background: url("../img/button-video-block.png")  center / cover no-repeat;	
 		position: absolute;
 		width: 18px;
 		height: 18px;			
@@ -520,9 +519,9 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	border: 3px solid #ffffff;
 }
 
-.form-body__form-item_active {
-	margin-bottom: 0px;
-}
+// .form-body__form-item_active {
+// 	margin-bottom: 0px;
+// }
 
 .form-body__item-title {
 	font-size: 14px;	
@@ -574,7 +573,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 	border: 3px solid #ffcc00;
 	border-top: none;
 	background-color: #ba0000;
-	margin: 0 40px 40px 40px;
+	margin: -18px 40px 40px 40px;
 }
 
 .form-body__item-list-active-title {
@@ -630,7 +629,7 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 }
 
 .location-form-bottom-row__image-picture {
-	background: linear-gradient(0deg, #ffcb00 10%, rgba(255,255,255,0) 100%), url("../img/express-form.png") no-repeat;
+	background: linear-gradient(0deg, #ffcb00 10%, rgba(255,255,255,0) 100%), url("../img/express-form.png") no-repeat  center / cover;
 	position: absolute;	
 	top: 37px;
 	left: 36px;
