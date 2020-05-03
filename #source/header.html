@@ -3,21 +3,17 @@
 		<div class="container">
 			<div class="header-top__row">
 				<div class="top-lang">
-					<div class="top-lang__item">
+					<div class="top-lang__item accordion">
 						<a href="#">
-							<span>English</span>
-							<img src="img/arrow-red.png" alt="" class="arrow-red">
+							<span>English</span>							
 						</a>
+						<button><img src="img/arrow-red.png" alt="" class="arrow-red"></button>
 					</div>
-					<div class="top-lang__item top-lang__item_unselected">
-						<a href="#">
-							<span>Russian</span>							
-						</a>
-					</div>
-					<div class="top-lang__item top-lang__item_unselected">
-						<a href="#">
-							<span>Polish</span>							
-						</a>
+					<div class="top-lang__item top-lang__item-list accordion-content">
+						<ul>
+							<li><a href="#">Russian</a></li>
+							<li><a href="#">Polish</a></li>
+						</ul>
 					</div>
 				</div>
 				<div class="top-right">
@@ -28,26 +24,18 @@
 						</a>
 					</div>
 					<div class="top-country">
-						<div class="top-country__item">
+						<div class="top-country__item accordion">
 							<a href="#">
-								<span>Country Profile</span>
-								<img src="img/arrow-red.png" alt="" class="arrow-red">
+								<span>Country Profile</span>								
 							</a>
+							<button><img src="img/arrow-red.png" alt="" class="arrow-red"></button>
 						</div>
-						<div class="top-country__item top-country__item_unselected">
-							<a href="#">
-								<span>Russia</span>								
-							</a>
-						</div>
-						<div class="top-country__item top-country__item_unselected">
-							<a href="#">
-								<span>Poland</span>								
-							</a>
-						</div>
-						<div class="top-country__item top-country__item_unselected">
-							<a href="#">
-								<span>England</span>								
-							</a>
+						<div class="top-country__item accordion-content">
+							<ul>
+								<li><a href="#">Russia</a></li>
+								<li><a href="#">Poland</a></li>
+								<li><a href="#">England</a></li>
+							</ul>
 						</div>
 					</div>
 				</div>
@@ -77,12 +65,7 @@
 				</div>
 
 				
-				<form action="" class="header-bottom-search-form">					
-					<!-- <input autocomplete="off" type="text" name="search" data-value="" class="header-bottom-search-form__input"/>
-					<button type="reset" class="header-bottom-search-form__close"></button> -->
-					<!-- <input type="text" class="header-bottom-search-form__field" placeholder="Search for ..."> -->
-					
-					
+				<form action="" class="header-bottom-search-form">
 					<button onclick="slide()" type="submit" class="header-bottom-search-form__submit">
 						<img src="img/search.png" alt="" />
 					</button>

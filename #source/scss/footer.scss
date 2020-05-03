@@ -25,11 +25,27 @@
 }
 
 .block-row {
-    margin: 62px 177px 90px 59px;
+    // margin: 62px 177px 0px 59px;
+    // margin-top: 60px;
+    
     @include flexbox();
+    // padding-left: 59px;
+    // padding-right: 177px;    
+    justify-content: space-between;         // почему не работает ?
+    // margin: -15px;
+    // padding: 15px;
 }
 
-.block-row__item {}
+.block-row__item {
+    @include flexbox();
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 0 15px;
+    // margin: -15px;
+    // padding: 15px;
+    width: 33.33%;               // почему не работает ?
+    overflow: hidden;            // как убрать то что вылазит снизу ?
+}
 
 .block-row__item-title {
     font-size: 20px;
@@ -64,18 +80,14 @@
 	top: 8px;	
 }
 
-.block-row__item-list_active {
+.block-row__item-list a:hover {
     color: #ffcc00;
 }
 
-.block-row__item-list_active-social {
-    color: #017EDF;
-}
+// .footer-about {
+//     margin-left: 185px;
+// }
 
-.footer-about {
-    margin-left: 185px;
-}
-
-.footer-social {
-    margin-left: 92px;
-}
+// .footer-social {
+//     margin-left: 92px;
+// }
