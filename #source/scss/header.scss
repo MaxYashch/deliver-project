@@ -16,7 +16,7 @@
 .top-lang__item a {
 	background-color: #ba0000;		
 	color: #ffffff;
-	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-family: $Poppins;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -42,7 +42,7 @@
 .top-center-link span {
 	background-color: #ba0000;		
 	color: #ffffff;
-	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-family: $Poppins;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -56,7 +56,7 @@
 .top-country__item a {
 	background-color: #ba0000;		
 	color: #ffffff;
-	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-family: $Poppins;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 24px;
@@ -82,7 +82,7 @@
 
 .header-bottom {	
 	background-color: #ffcc00;
-	padding: 40px 0;	
+	padding: 30px 0;	
 }
 
 .inner-container{
@@ -100,18 +100,22 @@
 	margin: 16px 0px 14px 0px;
 }
 	
-ul.header-bottom__list {
+.header-bottom__list {
 	@include flexbox();	
+}
+
+.header-bottom__list li {
+	margin-right: 30px;
 }
 
 .menu__link {
 	display: inline-flex;
 	color: #ba0000;
-	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-family: $Poppins;
 	font-size: 14px;	
 	text-transform: uppercase;				
 	letter-spacing: 0.42px;
-	margin-right: 45px;
+	padding: 10px 15px;
 }
 
 .menu__link:hover {
@@ -127,7 +131,7 @@ ul.header-bottom__list {
 	position: absolute;
 	left: 50%;
 	margin: 0px 0px 0px -52.5px;
-	bottom: -40px;
+	bottom: -30px;
 }
 
 
@@ -173,7 +177,7 @@ ul.header-bottom__list {
 .header-search-field__text {
 	background-color: #ffcc00;
 	color: #ba0000;
-	font-family: Poppins, Arial, Helvetica, sans-serif;
+	font-family: $Poppins;
 	padding: 0 20px;
 	font-size: 14px;
 	
@@ -192,7 +196,7 @@ ul.header-bottom__list {
 	font-size: 12px;
 	letter-spacing: 1px;		
 	color: #ffffff;
-	font-family: Poppins, Arial, Helvetica, sans-serif;		
+	font-family: $Poppins;		
 	font-weight: 700;
 	text-transform: uppercase;
 	text-align: center;
