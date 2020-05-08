@@ -12,15 +12,7 @@ for (var i = 0; i < acc.length; i++) {
   });
 }
 
-// accordion-content
 
 
 
 
-// if (panel.style.display === "block") {
-//   panel.style.display = "none";
-// } else {
-//   panel.style.display = "block";
-// }
-// this.classList.toggle("form-body__form-item_active");
-// this.classList.toggle("form-body__item-button_active");

@@ -1,15 +1,13 @@
-<header>
+<header class="header">
 	<div class="header-top">
 		<div class="container">
 			<div class="header-top__row">
 				<div class="top-lang">
-					<div class="top-lang__item accordion">
-						<a href="#">
-							<span>English</span>							
-						</a>
-						<button><img src="img/arrow-red.png" alt="" class="arrow-red"></button>
-					</div>
-					<div class="top-lang__item top-lang__item-list accordion-content">
+					<button class="top-lang__value accordion">
+						<span>English</span>					
+						<img src="img/arrow-red.png" alt="" class="arrow-red">
+					</button>
+					<div class="top-lang__item-list accordion-content">
 						<ul>
 							<li><a href="#">Russian</a></li>
 							<li><a href="#">Polish</a></li>
@@ -23,6 +21,8 @@
 							<span>Contact Center</span>
 						</a>
 					</div>
+
+
 					<div class="top-country">
 						<div class="top-country__item accordion">
 							<a href="#">
@@ -38,6 +38,8 @@
 							</ul>
 						</div>
 					</div>
+
+					
 				</div>
 			</div>			
 		</div>
@@ -65,17 +67,17 @@
 				</div>
 
 				
-				<form action="" class="header-bottom-search-form">
-					<button onclick="slide()" type="submit" class="header-bottom-search-form__submit">
-						<img src="img/search.png" alt="" />
+				<div class="header-bottom-search-form">
+					<button type="submit" class="header-bottom-search-form__submit">
+						<img src="img/search.png" alt="">
 					</button>
-				</form>			
+				</div>			
 			</div>
 
 			
 		</div>
 	</div>
-<div class="header-search hide">
+	<div class="header-search">
 		<div class="container">
 			<div class="header-search-field">
 				<input type="text" class="header-search-field__text" placeholder="Search for ...">

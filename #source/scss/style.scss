@@ -6,7 +6,7 @@
 @mixin skew($num){-webkit-transform: skewX($num);-moz-transform: skewX($num);-ms-transform: skewX($num);-o-transform: skewX($num);transform: skewX($num);}
 @mixin cnt($h){display: flex;flex-direction: column;height: $h;text-align: center;align-items: stretch;justify-content: center;}
 @mixin tr($x,$y,$z){transform: translate3d($x, $y, $z);};
-@mixin flexbox(){display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;font-size:0;}
+@mixin flexbox(){display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;}
 @mixin flexboxinline(){display:-webkit-inline-flex;display:-moz-inline-flex;display:-ms-inline-flex;display:-o-inline-flex;display:inline-flex;}
 @mixin flexorder($val){-webkit-box-ordinal-group: $val;-moz-box-ordinal-group: $val;-ms-flex-order: $val;-webkit-order: $val;order: $val;}
 //</МИКСИНЫ>===============================================================================================
@@ -90,7 +90,7 @@ $Poppins: Poppins, Arial, Helvetica, sans-serif;
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
 .mainblock {
-	background: linear-gradient(45deg, #b90000 25%, rgba(255, 203, 0, 0) 70%), url("../../img/bg.png") no-repeat  center / cover;
+	background: linear-gradient(45deg, #b90000 25%, rgba(255, 203, 0, 0) 70%), url("../img/bg.png") no-repeat  center / cover;
 	@include flexbox();		
 	flex-direction: column;	
 	justify-content: center;
@@ -378,7 +378,7 @@ $Poppins: Poppins, Arial, Helvetica, sans-serif;
 //===================================================================================================================
 .video-block {	
 	height: 700px;
-	background: linear-gradient(0deg, rgba(255,203,0,0.7019607843137255) 0%, rgba(185,0,0,0) 70%), url("../../img/bg-video-block.png") no-repeat center / cover;	
+	background: linear-gradient(0deg, rgba(255,203,0,0.7019607843137255) 0%, rgba(185,0,0,0) 70%), url("../img/bg-video-block.png") no-repeat center / cover;	
 	padding-top: 151px;
 }
 
@@ -499,6 +499,8 @@ border: 2px solid #ffcc00;
 
 .location-form-bottom-row__form {
 	background-color: #ba0000;
+	width: 600px;
+	max-width: 50%;
 }
 .form-header {
 	margin-bottom: 40px;
@@ -506,7 +508,8 @@ border: 2px solid #ffcc00;
 }
 
 .form-header__express {
-	margin: 21px 110px 20px 111px;
+	flex: 1 1 0;
+	margin: 20px 110px 20px 111px;
 	font-size: 14px;
 	letter-spacing: 2px;
 	line-height: 24px;
@@ -520,7 +523,11 @@ border: 2px solid #ffcc00;
 }
 
 .form-header__logistics {
-	padding: 21px 96px 20px 97px;
+	flex: 1 1 0;
+	padding: 20px 20px 20px 20px;
+	align-items: center;
+	max-width: 50%;
+	justify-content: center;
 	font-size: 14px;
 	letter-spacing: 2px;
 	line-height: 24px;
@@ -635,6 +642,7 @@ border: 2px solid #ffcc00;
 	@include flexbox();
 	position: relative;
 	margin-right: 36px;
+	max-width: 50%;
 }
 
 .location-form-bottom-row__image-border {	
