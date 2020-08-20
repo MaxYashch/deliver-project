@@ -1,490 +1,512 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<title>Deliver</title>
 	<meta charset="UTF-8">
-	<meta name="format-detection" content="telephone=no">		
-	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">		
-	<link rel="stylesheet" href="css/style.css">	
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
+
 <body>
 	<div class="wrapper">
 		<header class="header">
-	<div class="header-top">
-		<div class="container">
-			<div class="header-top__row">
-				<div class="top-lang">
-					<button class="top-lang__value accordion">
-						<span>English</span>					
-						<img src="img/arrow-red.png" alt="" class="arrow-red">
-					</button>
-					<div class="top-lang__item-list accordion-content">
-						<ul>
-							<li><a href="#">Russian</a></li>
-							<li><a href="#">Polish</a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="top-right">
-					<div class="top-center">
-						<a href="" class="top-center-link"> 
-							<img src="img/contact-center.png" alt=""/>
-							<span>Contact Center</span>
-						</a>
-					</div>
-
-
-					<div class="top-country">
-						<div class="top-country__item accordion">
-							<a href="#">
-								<span>Country Profile</span>								
-							</a>
-							<button><img src="img/arrow-red.png" alt="" class="arrow-red"></button>
+			<div class="header-top">
+				<div class="container">
+					<div class="header-top__row">
+						<div class="top-lang dropdown">
+							<button onclick="myFunction()" class="top-lang__value dropbtn">
+								<span class="dropbtn">English</span>
+								<img src="img/arrow-red.png" alt="" class="arrow-red dropbtn">
+							</button>
+							<div id="myDropdown" class="top-lang__item-list dropdown-content">
+								<a href="#">Russian</a>
+								<a href="#">Polish</a>
+							</div>
 						</div>
-						<div class="top-country__item accordion-content">
-							<ul>
-								<li><a href="#">Russia</a></li>
-								<li><a href="#">Poland</a></li>
-								<li><a href="#">England</a></li>
-							</ul>
+
+
+
+						<div class="top-right">
+							<div class="top-center">
+								<a href="" class="top-center-link">
+									<img src="img/contact-center.png" alt="" />
+									<span>Contact Center</span>
+								</a>
+							</div>
+
+
+
+							<div class="top-lang">
+								<button onclick="Country()" class="top-lang__value Countrybtn">
+									<span class="Countrybtn">Country Profile</span>
+									<img src="img/arrow-red.png" alt="" class="arrow-red Countrybtn">
+								</button>
+								<div id="myDropdownCountry" class="top-lang__item-list dropdown-content-country">
+									<a href="#">Russia</a>
+									<a href="#">Poland</a>
+									<a href="#">England</a>
+								</div>
+							</div>
+
+
 						</div>
+
 					</div>
-
-					
 				</div>
-			</div>			
-		</div>
-	</div>
-
-	<div class="header-bottom">
-		<div class="container">
-			<div class="inner-container">
-				<div class="header-bottom__logo">
-					<a href=""><img src="img/logo.png" alt="" /></a>
-				</div>
-
-
-				<div class="header-bottom-menu">
-					<nav class="header-bottom__items">
-						<ul class="header-bottom__list">
-							<li><a href="#" class="menu__link">Express</a></li>
-							<li><a href="#" class="menu__link">Parcel & Ecommerce</a></li>
-							<li><a href="#" class="menu__link">Logistics</a></li>
-							<li><a href="#" class="menu__link">Mail</a></li>
-							<li><a href="#" class="menu__link">Press</a></li>
-							<li><a href="#" class="menu__link">About</a></li>
-						</ul>
-					</nav>
-				</div>
-
-				
-				<div class="header-bottom-search-form">
-					<button type="submit" class="header-bottom-search-form__submit">
-						<img src="img/search.png" alt="">
-					</button>
-				</div>			
 			</div>
 
-			
-		</div>
-	</div>
-	<div class="header-search">
-		<div class="container">
-			<div class="header-search-field">
-				<input type="text" class="header-search-field__text" placeholder="Search for ...">
-				<button type="submit" class="header-search-field__button">Search</button>
-			</div>
-		</div>
-	</div>
-</header>
-                                                  
-		<div class="mainblock">			
-				<div class='container'>					
-					<div class="mainblock__text">
-						<h2 class="mainblock__title">
-							We Deliver<br>
-							With Speed							
-						</h2>
-						<div class="mainblock__subtitle">
-							When an unknown printer took a galley of type and scrambled
-							it to make a type specimen book. 
-							It has survived not only five centuries
+
+
+			<div class="header-bottom">
+				<div class="container">
+					<div class="inner-container">
+						<div class="header-bottom__logo">
+							<a href=""><img src="img/logo.png" alt="" /></a>
 						</div>
-					</div>					
-					<div class="mainblock__features">
-						<div class="mainblock__feature">Amazing</div>
-						<div class="mainblock__feature">Quick</div>
-						<div class="mainblock__feature">24/7 Supports</div>
+
+
+						<div class="header__burger">
+							<span></span>
+						</div>
+
+
+						<div class="header-bottom-menu">
+							<nav class="header-bottom__items">
+								<ul class="header-bottom__list">
+									<li><a href="#" class="menu__link">Express</a></li>
+									<li><a href="#" class="menu__link">Parcel & Ecommerce</a></li>
+									<li><a href="#" class="menu__link">Logistics</a></li>
+									<li><a href="#" class="menu__link">Mail</a></li>
+									<li><a href="#" class="menu__link">Press</a></li>
+									<li><a href="#" class="menu__link">About</a></li>
+								</ul>
+							</nav>
+						</div>
+
+
+						<div class="header-bottom-search-form">
+							<button type="submit" class="header-bottom-search-form__submit">
+								<img src="img/search.png" alt="">
+							</button>
+						</div>
 					</div>
-					<div class="mainblock__buttons">
-						<button  class="btn mainblock__buttons-learn">Learn More</button>
-						<button  class="btn mainblock__buttons-worldwide">dhl worldwide</button>
+
+
+				</div>
+			</div>
+			<div class="header-search">
+				<div class="container">
+					<div class="header-search-field">
+						<input type="text" class="header-search-field__text" placeholder="Search for ...">
+						<button type="submit" class="header-search-field__button">Search</button>
 					</div>
 				</div>
+			</div>
+		</header>
+		<div class="mainblock">
+			<div class='container'>
+				<div class="mainblock__text">
+					<h2 class="mainblock__title">
+						We Deliver<br>
+						With Speed
+					</h2>
+					<div class="mainblock__subtitle">
+						When an unknown printer took a galley of type and scrambled
+						it to make a type specimen book.
+						It has survived not only five centuries
+					</div>
+				</div>
+				<div class="mainblock__features">
+					<div class="mainblock__feature">Amazing</div>
+					<div class="mainblock__feature">Quick</div>
+					<div class="mainblock__feature">24/7 Supports</div>
+				</div>
+				<div class="mainblock__buttons">
+					<button class="btn mainblock__buttons-learn">Learn More</button>
+					<button class="btn mainblock__buttons-worldwide">dhl worldwide</button>
+				</div>
+			</div>
 		</div>
 
 
 		<div class="services">
 			<div class='container'>
 				<div class="services-block"></div>
-					<div class="services-header">
-						<h2 class="services-header__title">Awesome Services</h2>
-						<div class="services-header__title-invisible">Services</div>
-					</div>
-					<div class="services-items-row">
-						<div class="services-items__item">
-							<div class="services-items__item-image">
-								<img src="img/services1.png" alt="" />
-							</div>
-							<h3 class="services-items__item-title">Express Services</h3>
-							<div class="services-items__item-text">
-								When an unknown printer took a galley
-								 of type and scrambled it to make 
-								 a type specimen.
-							</div>
-							<div class="services-items__item-read">
-								<a href="">Read More</a>
-							</div>
-						</div>
-						<div class="services-items__item">
-							<div class="services-items__item-image">
-								<img src="img/services2.png" alt="" />
-							</div>
-							<h3 class="services-items__item-title">parcel & ecommerce</h3>
-							<div class="services-items__item-text">
-								When an unknown printer took a galley 
-								of type and scrambled it to make a type
-								 specimen.
-							</div>
-							<div class="services-items__item-read">
-								<a href="">Read More</a>
-							</div>
-						</div>
-						<div class="services-items__item">
-							<div class="services-items__item-image">
-								<img src="img/services3.png" alt="" />
-							</div>
-							<h3 class="services-items__item-title">frieght transport</h3>
-							<div class="services-items__item-text">
-								When an unknown printer took a galley of 
-								type and scrambled it to make a type 
-								specimen.
-							</div>
-							<div class="services-items__item-read">
-								<a href="">Read More</a>
-							</div>
-						</div>
-
-
-						
-						<div class="services-items__item item-worldwide">
-							<div class="item-worldwide-container">
-								<div class="item-worldwide__title">DHl Worldwide</div>
-								<div class="item-worldwide__text">When an unknown prot printer type and scra</div>
-								<div class="item-worldwide__select">
-									<div class="item-worldwide__select-item accordion">
-										<a href="#">
-											<span>Location</span>											
-										</a>
-										<button class="item-worldwide__select-item-button">
-											<img src="img/arrow-yellow.png" alt="" class="yellow-red">
-										</button>
-									</div>
-									<div class="item-worldwide__select-item item-worldwide__select-item-list accordion-content">
-										<a href="#">
-											<span>Russia</span>							
-										</a>									
-										<a href="#">
-											<span>Poland</span>							
-										</a>
-									</div>
-								</div>
-								<button class="btn item-worldwide__button" type="submit">explore</button>								
-							</div>
-						</div>
-					</div>
+				<div class="services-header">
+					<h2 class="services-header__title">Awesome Services</h2>
+					<div class="services-header__title-invisible">Services</div>
 				</div>
-			</div>
-		</div>
-
-
-		<div class="video-block">			
-			<h2 class="video-block__title">One of the best international service provider</h2>			
-			<button class="video-block__play">				
-				<div class="video-block__play-button"></div>
-			</button>
-		</div>
-		
-		
-
-		<div class="location-form">
-			<div class="container">
-				<div class="location-form-top-row">
-					<div class="location-form-top-row__item">
-						<div class="location-form-top-row__item-image">
-							<img src="img/express-form1.png" alt="" class="express-form">
+				<div class="services-items-row">
+					<div class="services-items__item">
+						<div class="services-items__item-image">
+							<img src="img/services1.png" alt="" />
 						</div>
-						<h3 class="location-form-top-row__item-title">Aerospace Provider</h3>
-						<div class="location-form-top-row__item-text">
-							<ul>
-								<li>When an unknown printer took.</li>
-								<li>Make a type specimen book.</li>
-								<li>It has survived.</li>
-								<li>Airlines unknown specimen.</li>
-							</ul>
+						<h3 class="services-items__item-title">Express Services</h3>
+						<div class="services-items__item-text">
+							When an unknown printer took a galley
+							of type and scrambled it to make
+							a type specimen.
+						</div>
+						<div class="services-items__item-read">
+							<a href="">Read More</a>
 						</div>
 					</div>
-					<div class="location-form-top-row__item">
-						<div class="location-form-top-row__item-image">
-							<img src="img/express-form2.png" alt="" class="express-form">
+					<div class="services-items__item">
+						<div class="services-items__item-image">
+							<img src="img/services2.png" alt="" />
 						</div>
-						<h3 class="location-form-top-row__item-title">Poppins Proved</h3>
-						<div class="location-form-top-row__item-text">
-							<ul>
-								<li>When an unknown printer took.</li>
-								<li>Make a type specimen book.</li>
-								<li>It has survived.</li>
-								<li>Airlines unknown specimen.</li>
-							</ul>
+						<h3 class="services-items__item-title">parcel & ecommerce</h3>
+						<div class="services-items__item-text">
+							When an unknown printer took a galley
+							of type and scrambled it to make a type
+							specimen.
 						</div>
-					</div>
-					<div class="location-form-top-row__item">
-						<div class="location-form-top-row__item-image">
-							<img src="img/express-form3.png" alt="" class="express-form">
-						</div>
-						<h3 class="location-form-top-row__item-title">Airline Specimen</h3>
-						<div class="location-form-top-row__item-text">
-							<ul>
-								<li>When an unknown printer took.</li>
-								<li>Make a type specimen book.</li>
-								<li>It has survived.</li>
-								<li>Airlines unknown specimen.</li>
-							</ul>
+						<div class="services-items__item-read">
+							<a href="">Read More</a>
 						</div>
 					</div>
-				</div>
-
-
-
-				<div class="location-form-bottom-row">
-					<div class="location-form-bottom-row__form">
-						<div class="form-header">
-							<div class="form-header__express">express</div>
-							<div class="form-header__logistics form-header__logistics_passive">logistics</div>
+					<div class="services-items__item">
+						<div class="services-items__item-image">
+							<img src="img/services3.png" alt="" />
 						</div>
-						
-							<div class="form-body__item accordion">
-								<div class="form-body__item-title">Track your shipment</div>							
-								<button type="" class="form-body__item-button">
-									<img src="img/arrow-red.png" alt="">
-								</button>							
-							</div>
-							<div class="form-body__item-list-active accordion-content">
-								<div class="form-body__item-list-active-title"><span>International Services to Another Country</span></div>
-								<div class="form-body__item-list-active-points">
-									<ul>
-										<li>
-											<a href="#"><span>Emergency</span></a>
-										</li>
-										<li>
-											<a href="#"><span>Time Critical</span></a>
-										</li>
-										<li>
-											<a href="#"><span>Less Urgent</span></a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="form-body__item accordion">
-								<div class="form-body__item-title">New login</div>							
-								<button type="" class="form-body__item-button">
-									<img src="img/arrow-red.png" alt="">
+						<h3 class="services-items__item-title">frieght transport</h3>
+						<div class="services-items__item-text">
+							When an unknown printer took a galley of
+							type and scrambled it to make a type
+							specimen.
+						</div>
+						<div class="services-items__item-read">
+							<a href="">Read More</a>
+						</div>
+					</div>
+
+
+
+					<div class="services-items__item item-worldwide">
+						<div class="item-worldwide-container">
+							<div class="item-worldwide__title">DHl Worldwide</div>
+							<div class="item-worldwide__text">When an unknown prot printer type and scra</div>
+
+
+							<div class="item-worldwide__select">
+								<button class="item-worldwide__select-item">
+									<span>Location</span>
+									<img src="img/arrow-yellow.png" alt="" class="yellow-red">
 								</button>
-							</div>
-							<div class="form-body__item-list-active accordion-content">
-								<div class="form-body__item-list-active-title"><span>International Services to Another Country</span></div>
-								<div class="form-body__item-list-active-points">
-									<ul>
-										<li>
-											<a href="#"><span>Emergency</span></a>
-										</li>
-										<li>
-											<a href="#"><span>Time Critical</span></a>
-										</li>
-										<li>
-											<a href="#"><span>Less Urgent</span></a>
-										</li>
-									</ul>
+								<div class="item-worldwide__select-item item-worldwide__select-item-list">
+									<a href="#">Russia</a>
+									<a href="#">Poland</a>
+									<a href="#">England</a>
 								</div>
 							</div>
-							<div class="form-body__item accordion">
-								<div class="form-body__item-title">Find Dhl point</div>							
-								<button type="" class="form-body__item-button">
-									<img src="img/arrow-red.png" alt="">
-								</button>
-							</div>
-							<div class="form-body__item-list-active accordion-content">
-								<div class="form-body__item-list-active-title"><span>International Services to Another Country</span></div>
-								<div class="form-body__item-list-active-points">
-									<ul>
-										<li>
-											<a href="#"><span>Emergency</span></a>
-										</li>
-										<li>
-											<a href="#"><span>Time Critical</span></a>
-										</li>
-										<li>
-											<a href="#"><span>Less Urgent</span></a>
-										</li>
-									</ul>
-								</div>
-							</div>					
-							<div class="form-body__item form-body__form-item_active accordion">
-								<div class="form-body__item-title form-body__item-title_active">find a service</div>							
-								<button type="" class="form-body__item-button form-body__item-button_active">
-									<img src="img/arrow-form-yellow.png" alt="">
-								</button>							
-							</div>
-							<div class="form-body__item-list-active accordion-content">
-								<div class="form-body__item-list-active-title"><span>International Services to Another Country</span></div>
-								<div class="form-body__item-list-active-points">
-									<ul>
-										<li>
-											<a href="#"><span>Emergency</span></a>
-										</li>
-										<li>
-											<a href="#"><span>Time Critical</span></a>
-										</li>
-										<li>
-											<a href="#"><span>Less Urgent</span></a>
-										</li>
-									</ul>
-								</div>
-							</div>						
-					</div>
 
-					<div class="location-form-bottom-row__image">
-						<div class="location-form-bottom-row__image-border"></div>
-						<div class="location-form-bottom-row__image-picture">
-							<div class="location-form-bottom-row__image-logo">
-								<img src="img/logo.png" alt="">
-							</div>
-						</div>						
+							<button class="btn item-worldwide__button" type="submit">explore</button>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		
+	</div>
 
-		<div class="features">
-			<div class="container">
-				<div class="features-row">
-					<div class="features-row-block">
-						<h3 class="features-row-block__title">Excellence. Simply delivered.</h3>
-						<div class="features-row-block__text">							
-							International express deliveries; global freight forwarding by air, sea, road and rail;
-							warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;
-							and other customized logistic services – with everything DHL does, we
-							help connect people and improve their lives.							
+
+	<div class="video-block">
+		<h2 class="video-block__title">One of the best international service provider</h2>
+		<button class="video-block__play">
+			<div class="video-block__play-button"></div>
+		</button>
+	</div>
+
+
+
+	<div class="location-form">
+		<div class="container">
+			<div class="location-form-top-row">
+				<div class="location-form-top-row__item">
+					<div class="location-form-top-row__item-image">
+						<img src="img/express-form1.png" alt="" class="express-form">
+					</div>
+					<h3 class="location-form-top-row__item-title">Aerospace Provider</h3>
+					<div class="location-form-top-row__item-text">
+						<ul>
+							<li>When an unknown printer took.</li>
+							<li>Make a type specimen book.</li>
+							<li>It has survived.</li>
+							<li>Airlines unknown specimen.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="location-form-top-row__item">
+					<div class="location-form-top-row__item-image">
+						<img src="img/express-form2.png" alt="" class="express-form">
+					</div>
+					<h3 class="location-form-top-row__item-title">Poppins Proved</h3>
+					<div class="location-form-top-row__item-text">
+						<ul>
+							<li>When an unknown printer took.</li>
+							<li>Make a type specimen book.</li>
+							<li>It has survived.</li>
+							<li>Airlines unknown specimen.</li>
+						</ul>
+					</div>
+				</div>
+				<div class="location-form-top-row__item">
+					<div class="location-form-top-row__item-image">
+						<img src="img/express-form3.png" alt="" class="express-form">
+					</div>
+					<h3 class="location-form-top-row__item-title">Airline Specimen</h3>
+					<div class="location-form-top-row__item-text">
+						<ul>
+							<li>When an unknown printer took.</li>
+							<li>Make a type specimen book.</li>
+							<li>It has survived.</li>
+							<li>Airlines unknown specimen.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="location-form-bottom-row">
+				<div class="location-form-bottom-row__form">
+					<div class="form-header">
+						<div class="form-header__express">express</div>
+						<div class="form-header__logistics form-header__logistics_passive">logistics</div>
+					</div>
+
+
+					<div class="form-body__item ">
+						<div class="form-body__item-title">Track your shipment</div>
+						<button type="" class="form-body__item-button">
+							<img src="img/arrow-red.png" alt="">
+						</button>
+					</div>
+					<div class="form-body__item-list-active">
+						<div class="form-body__item-list-active-title"><span>International Services to Another
+								Country</span></div>
+						<div class="form-body__item-list-active-points">
+							<ul>
+								<li>
+									<a href="#"><span>Emergency</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Time Critical</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Less Urgent</span></a>
+								</li>
+							</ul>
 						</div>
 					</div>
-					<button class="btn features-row-button">learn more</button>					
+
+
+
+					<div class="form-body__item">
+						<div class="form-body__item-title">New login</div>
+						<button type="" class="form-body__item-button-two">
+							<img src="img/arrow-red.png" alt="">
+						</button>
+					</div>
+					<div class="form-body__item-list-active-two">
+						<div class="form-body__item-list-active-title"><span>International Services to Another
+								Country</span></div>
+						<div class="form-body__item-list-active-points">
+							<ul>
+								<li>
+									<a href="#"><span>Emergency</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Time Critical</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Less Urgent</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+
+
+					<div class="form-body__item">
+						<div class="form-body__item-title">Find Dhl point</div>
+						<button type="" class="form-body__item-button-three">
+							<img src="img/arrow-red.png" alt="">
+						</button>
+					</div>
+					<div class="form-body__item-list-active-three">
+						<div class="form-body__item-list-active-title"><span>International Services to Another
+								Country</span></div>
+						<div class="form-body__item-list-active-points">
+							<ul>
+								<li>
+									<a href="#"><span>Emergency</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Time Critical</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Less Urgent</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!--form-body__form-item_active -->
+					<div class="form-body__item">
+						<!--form-body__item-title_active -->
+						<div class="form-body__item-title">find a service</div>
+						<!--form-body__item-button_active -->
+						<button type="" class="form-body__item-button-four">
+							<!--img/arrow-form-yellow.png -->
+							<img src="img/arrow-red.png" alt="">
+						</button>
+					</div>
+					<div class="form-body__item-list-active-four">
+						<div class="form-body__item-list-active-title"><span>International Services to Another
+								Country</span></div>
+						<div class="form-body__item-list-active-points">
+							<ul>
+								<li>
+									<a href="#"><span>Emergency</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Time Critical</span></a>
+								</li>
+								<li>
+									<a href="#"><span>Less Urgent</span></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="location-form-bottom-row__image">
+					<div class="location-form-bottom-row__image-border"></div>
+					<div class="location-form-bottom-row__image-picture">
+						<div class="location-form-bottom-row__image-logo">
+							<img src="img/logo.png" alt="">
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+
+
+	<div class="features">
+		<div class="container">
+			<div class="features-row">
+				<div class="features-row-block">
+					<h3 class="features-row-block__title">Excellence. Simply delivered.</h3>
+					<div class="features-row-block__text">
+						International express deliveries; global freight forwarding by air, sea, road and rail;
+						warehousing solutions from packaging, to repairs, to storage; mail deliveries worldwide;
+						and other customized logistic services – with everything DHL does, we
+						help connect people and improve their lives.
+					</div>
+				</div>
+				<button class="btn features-row-button">learn more</button>
+			</div>
+		</div>
+	</div>
 
 
 
-		<div class="client">
-			<div class="container">
-				<div class="client-row">
-					<a href="#">
-						<div class="client-item">						
-							<div class="client-item__image">
-								<img src="img/client1-1.png" alt="">
-							</div>						
+	<div class="client">
+		<div class="container">
+			<div class="client-row">
+				<a href="#">
+					<div class="client-item">
+						<div class="client-item__image">
+							<img src="img/client1-1.png" alt="">
 						</div>
-					</a>
-					<a href="#">
-						<div class="client-item">												
-							<div class="client-item__image">
-								<img src="img/client2-1.png" alt="">
-							</div>												
+					</div>
+				</a>
+				<a href="#">
+					<div class="client-item">
+						<div class="client-item__image">
+							<img src="img/client2-1.png" alt="">
 						</div>
-					</a>
-					<a href="#">
-						<div class="client-item">													
-							<div class="client-item__image">
-								<img src="img/client3-1.png" alt="">
-							</div>													
+					</div>
+				</a>
+				<a href="#">
+					<div class="client-item">
+						<div class="client-item__image">
+							<img src="img/client3-1.png" alt="">
 						</div>
-					</a>
-					<a href="#">
-						<div class="client-item">													
-							<div class="client-item__image">
-								<img src="img/client4-1.png" alt="">
-							</div>													
+					</div>
+				</a>
+				<a href="#">
+					<div class="client-item">
+						<div class="client-item__image">
+							<img src="img/client4-1.png" alt="">
 						</div>
-					</a>
+					</div>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="block-left">
+			<div class="block-color"></div>
+			<div class="block-img">
+				<img src="img/footer-left.png" alt="">
+			</div>
+		</div>
+		<div class="block-row">
+			<div class="block-row__item footer-contact">
+				<h3 class="block-row__item-title">Contact Center</h3>
+				<div class="block-row__item-list">
+					<ul>
+						<li><a href="#">DHL Express</a></li>
+						<li><a href="#">DHL Parcel & eCommerce</a></li>
+						<li><a href="#">DHL Global Forwarding</a></li>
+						<li><a href="#">DHL Freight</a></li>
+						<li><a href="#">DHL Supply Chain</a></li>
+					</ul>
 				</div>
 			</div>
-		</div>		
-
-		<footer class="footer">	
-	<div class="block-left">
-		<div class="block-color"></div>
-		<div class="block-img">
-			<img src="img/footer-left.png" alt="">
-		</div>
-	</div>
-	<div class="block-row">
-		<div class="block-row__item footer-contact">
-			<h3 class="block-row__item-title">Contact Center</h3>
-			<div class="block-row__item-list">
-				<ul>
-					<li><a href="#">DHL Express</a></li>
-					<li><a href="#">DHL Parcel & eCommerce</a></li>
-					<li><a href="#">DHL Global Forwarding</a></li>
-					<li><a href="#">DHL Freight</a></li>
-					<li><a href="#">DHL Supply Chain</a></li>
-				</ul>
+			<div class="block-row__item footer-about">
+				<h3 class="block-row__item-title">About Us</h3>
+				<div class="block-row__item-list">
+					<ul>
+						<li><a href="#">Partnerships</a></li>
+						<li><a href="#">Company Portrait</a></li>
+						<li><a href="#">DHL Global Forwarding</a></li>
+						<li><a href="#">Green Solutions</a></li>
+						<li><a href="#">Innovation</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="block-row__item footer-social">
+				<h3 class="block-row__item-title">Social Media</h3>
+				<div class="block-row__item-list">
+					<ul>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">dribbble</a></li>
+						<li><a href="#">behance</a></li>
+						<li><a href="#">gmail</a></li>
+						<li><a href="#">twitter</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
-		<div class="block-row__item footer-about">
-			<h3 class="block-row__item-title">About Us</h3>
-			<div class="block-row__item-list">
-				<ul>
-					<li><a href="#">Partnerships</a></li>
-					<li><a href="#">Company Portrait</a></li>
-					<li><a href="#">DHL Global Forwarding</a></li>
-					<li><a href="#">Green Solutions</a></li>
-					<li><a href="#">Innovation</a></li>
-				</ul>
+		<div class="block-right">
+			<div class="block-img">
+				<img src="img/footer-right.png" alt="">
 			</div>
+			<div class="block-color"></div>
 		</div>
-		<div class="block-row__item footer-social">
-			<h3 class="block-row__item-title">Social Media</h3>
-			<div class="block-row__item-list">
-				<ul>
-					<li><a href="#">Facebook</a></li>
-					<li><a href="#">dribbble</a></li>
-					<li><a href="#">behance</a></li>
-					<li><a href="#">gmail</a></li>
-					<li><a href="#">twitter</a></li>
-				</ul>
-			</div>
-		</div>
+	</footer>
 	</div>
-	<div class="block-right">		
-		<div class="block-img">
-			<img src="img/footer-right.png" alt="">
-		</div>
-		<div class="block-color"></div>
-	</div>
-</footer>
-	</div>	
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 	<script src="js/script.js" defer></script>
-	<script src="js/accordion.js" defer></script>
+	<!-- <script src="js/accordion.js" defer></script> -->
+	<script src="js/dropdown.js" defer></script>
 </body>
+
 </html>

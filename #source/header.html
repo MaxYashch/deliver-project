@@ -2,54 +2,60 @@
 	<div class="header-top">
 		<div class="container">
 			<div class="header-top__row">
-				<div class="top-lang">
-					<button class="top-lang__value accordion">
-						<span>English</span>					
-						<img src="img/arrow-red.png" alt="" class="arrow-red">
+				<div class="top-lang dropdown">
+					<button onclick="myFunction()" class="top-lang__value dropbtn">
+						<span class="dropbtn">English</span>
+						<img src="img/arrow-red.png" alt="" class="arrow-red dropbtn">
 					</button>
-					<div class="top-lang__item-list accordion-content">
-						<ul>
-							<li><a href="#">Russian</a></li>
-							<li><a href="#">Polish</a></li>
-						</ul>
+					<div id="myDropdown" class="top-lang__item-list dropdown-content">
+						<a href="#">Russian</a>
+						<a href="#">Polish</a>
 					</div>
 				</div>
+
+
+
 				<div class="top-right">
 					<div class="top-center">
-						<a href="" class="top-center-link"> 
-							<img src="img/contact-center.png" alt=""/>
+						<a href="" class="top-center-link">
+							<img src="img/contact-center.png" alt="" />
 							<span>Contact Center</span>
 						</a>
 					</div>
 
 
-					<div class="top-country">
-						<div class="top-country__item accordion">
-							<a href="#">
-								<span>Country Profile</span>								
-							</a>
-							<button><img src="img/arrow-red.png" alt="" class="arrow-red"></button>
-						</div>
-						<div class="top-country__item accordion-content">
-							<ul>
-								<li><a href="#">Russia</a></li>
-								<li><a href="#">Poland</a></li>
-								<li><a href="#">England</a></li>
-							</ul>
+
+					<div class="top-lang">
+						<button onclick="Country()" class="top-lang__value Countrybtn">
+							<span class="Countrybtn">Country Profile</span>
+							<img src="img/arrow-red.png" alt="" class="arrow-red Countrybtn">
+						</button>
+						<div id="myDropdownCountry" class="top-lang__item-list dropdown-content-country">
+							<a href="#">Russia</a>
+							<a href="#">Poland</a>
+							<a href="#">England</a>
 						</div>
 					</div>
 
-					
+
 				</div>
-			</div>			
+
+			</div>
 		</div>
 	</div>
+
+
 
 	<div class="header-bottom">
 		<div class="container">
 			<div class="inner-container">
 				<div class="header-bottom__logo">
 					<a href=""><img src="img/logo.png" alt="" /></a>
+				</div>
+
+
+				<div class="header__burger">
+					<span></span>
 				</div>
 
 
@@ -66,15 +72,15 @@
 					</nav>
 				</div>
 
-				
+
 				<div class="header-bottom-search-form">
 					<button type="submit" class="header-bottom-search-form__submit">
 						<img src="img/search.png" alt="">
 					</button>
-				</div>			
+				</div>
 			</div>
 
-			
+
 		</div>
 	</div>
 	<div class="header-search">
@@ -86,4 +92,3 @@
 		</div>
 	</div>
 </header>
-                                                  
