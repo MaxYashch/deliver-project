@@ -19,7 +19,7 @@
 a:focus,a:active{outline: none;}
 aside,nav,footer,header,section{display: block;}
 html,body{height: 100%;margin: 0;padding: 0;position: relative;width: 100%;color: #000;}
-body{font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
+body{overflow-x: hidden; font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;
 	&.lock{overflow: hidden;}}
 input::-ms-clear{display: none;}
 button{cursor: pointer;}
@@ -47,7 +47,7 @@ $Poppins: Poppins, Arial, Helvetica, sans-serif;
 .wrapper{
 	width: 100%;
 	min-height: 100%;
-	overflow: hidden;
+	
 	@include flexbox();
 	flex-direction: column;
 	background-color: #000000;
@@ -145,7 +145,7 @@ $Poppins: Poppins, Arial, Helvetica, sans-serif;
 	}
 
 	.mainblock__feature {
-		z-index: 10;			
+		// z-index: 10;			
 		@include flexbox();
 		color: #ffffff;
 		font-family: $Poppins;
@@ -157,7 +157,7 @@ $Poppins: Poppins, Arial, Helvetica, sans-serif;
 	}
 
 	.mainblock__feature:after {
-		z-index: 10;
+		// z-index: 10;
 		content:'';
 		width: 3px;
 		height: 3px;
@@ -169,7 +169,10 @@ $Poppins: Poppins, Arial, Helvetica, sans-serif;
 		&:after{display: none;}
 	}
 
-
+	.mainblock__title.active {
+		display: none;
+	}
+	
 	
 	.mainblock__buttons {		
 		@include flexbox();
