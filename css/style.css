@@ -441,7 +441,7 @@ h1, h2, h3, h4, h5, h6 {
 .header__burger {
   display: none; }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   body.lock {
     overflow: hidden; }
   .header-bottom {
@@ -518,7 +518,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-right: 0px; }
   .header-bottom-menu {
     display: none; }
-  .header-bottom-menu.active {
+  .header-bottom-menu {
     position: fixed;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -527,7 +527,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    top: 77px;
+    top: -120%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -538,6 +538,8 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #ffcc00;
     padding: 70px 10px 20px 10px;
     z-index: 3; }
+  .header-bottom-menu.active {
+    top: 77px; }
   .header-bottom__list {
     display: block; }
   .header-bottom__list li {
