@@ -722,7 +722,7 @@ h1, h2, h3, h4, h5, h6 {
       position: absolute;
       bottom: -52px; }
   .mainblock__subtitle {
-    width: 747px;
+    max-width: 747px;
     color: #ffcc00;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -816,7 +816,7 @@ h1, h2, h3, h4, h5, h6 {
 .services-header__title-invisible {
   color: #f8f8f8;
   font-family: Poppins, Arial, Helvetica, sans-serif;
-  font-size: 150px;
+  font-size: 50px;
   line-height: 80px;
   text-transform: uppercase;
   letter-spacing: 4.5px;
@@ -928,10 +928,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 19px;
   background-color: #9d0000;
   position: relative;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  display: inline-block; }
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 .item-worldwide__select-item {
   background-color: #9d0000;
@@ -950,10 +948,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 16px;
+  line-height: 50px;
   margin: 0px 0px 0px 21px; }
 
 .item-worldwide__select-item img {
-  margin-left: 57px; }
+  position: absolute;
+  right: 0;
+  top: 0; }
 
 .item-worldwide__select-item-list {
   left: 0;
@@ -975,6 +976,13 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
   line-height: 30px;
   display: block; }
+
+.item-worldwide__buttons {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
 
 .item-worldwide__button {
   display: -webkit-box;
