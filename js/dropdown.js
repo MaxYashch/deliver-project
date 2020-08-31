@@ -30,8 +30,8 @@ window.addEventListener("click", function (event) {
         var dropdowns = document.getElementsByClassName("dropdown-content-country");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[ i ]; if
-                (openDropdown.classList.contains('show')) {
+            var openDropdown = dropdowns[ i ];
+            if (openDropdown.classList.contains('show')) {
                 openDropdown.classList.remove('show');
             }
         }
@@ -47,12 +47,25 @@ function worldwideDropdown() {
     c.classList.toggle('wwDropdown');
 }
 
+// window.addEventListener("click", function (event) {
+//     if (!event.target.matches('.tem-worldwide__button')) {
+//         var dropdowns = document.getElementsByClassName("dropdown-content");
+//         var t;
+//         for (t = 0; t < dropdowns.length; t++) {
+//             var openDropdown = dropdowns[ t ];
+//             if (openDropdown.classList.contains('show')) {
+//                 openDropdown.classList.remove('show');
+//             }
+//         }
+//     }
+// });
+
 document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { document.querySelector('.item-worldwide__select-item-list').classList.remove('wwDropdown') }
 })
 
 
-// worldwide dropdown
+// form-body dropdown
 
 let expressDropList = document.querySelector('.form-body__item-list-active');
 let expressDropButton = document.querySelector('.form-body__item-button');
@@ -68,7 +81,7 @@ expressDropButton.addEventListener('click', () => {
 document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { expressDropList.classList.remove('form-body__item-list-active-dropdown') }
 })
-// worldwide dropdown 2
+// form-body dropdown 2
 let expressDropList2 = document.querySelector('.form-body__item-list-active-two');
 let expressDropButton2 = document.querySelector('.form-body__item-button-two');
 expressDropButton2.addEventListener('click', () => {
@@ -84,7 +97,7 @@ document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { expressDropList2.classList.remove('form-body__item-list-active-dropdown') }
 })
 
-// worldwide dropdown3
+// form-body dropdown3
 let expressDropList3 = document.querySelector('.form-body__item-list-active-three');
 let expressDropButton3 = document.querySelector('.form-body__item-button-three');
 expressDropButton3.addEventListener('click', () => {
@@ -100,7 +113,7 @@ document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { expressDropList3.classList.remove('form-body__item-list-active-dropdown') }
 })
 
-// worldwide dropdown4
+// form-body dropdown4
 let expressDropList4 = document.querySelector('.form-body__item-list-active-four');
 let expressDropButton4 = document.querySelector('.form-body__item-button-four');
 expressDropButton4.addEventListener('click', () => {
