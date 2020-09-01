@@ -12,16 +12,24 @@
 }
 
 .block-color {
-    width: 41px;
-    height: 312px;
+    max-width: 41px;
+    width: 100%;
+	height: 100%;	
 }
 
 .block-left .block-color {
     background-color: #ba0000;
+    
 }
 
 .block-right .block-color {
     background-color: #ffcc00;
+    
+}
+
+.block-img img {
+    max-width: 100%;
+	max-height: 100%;	
 }
 
 .block-row {
@@ -43,12 +51,12 @@
     padding: 0 15px;
     // margin: -15px;
     // padding: 15px;
-    width: 33.33%;               // почему не работает ?
-    overflow: hidden;            // как убрать то что вылазит снизу ?
+    width: 50%;               // почему не работает ?
 }
 
 .block-row__item-title {
-    font-size: 20px;
+    
+    font-size: calc(14px + 6 * ((100vw - 320px) / (1180 - 320)));
     letter-spacing: 1px;
     line-height: 24px;
     color: #ba0000;
@@ -60,8 +68,8 @@
 
 .block-row__item-list ul li a {
     @include flexbox();
-    position: relative;
-    font-size: 14px;
+    position: relative;    
+    font-size: calc(10px + 4 * ((100vw - 320px) / (1180 - 320)));
     line-height: 27px;
     color: #777777;
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -84,26 +92,87 @@
     color: #ffcc00;
 }
 
-// .footer-about {
-//     margin-left: 185px;
-// }
+@media (max-width:1210px){
+	.block-row__item-title1 {       
+        margin-bottom: 10px;
+    }
+}
 
-// .footer-social {
-//     margin-left: 92px;
-// }
+@media (max-width:1100px){
+	.block-row__item-title {
+        line-height: 18px;
+    }
+    .block-row__item-list ul li a {
+        line-height: 22px;
+    }
+    .block-row__item-list ul li a::before {
+        top: 5px;	
+    }
+}
 
-@media (max-width:767px){
-	
+@media (max-width:905px){
+	.block-color {
+        display: none;
+    }
+    .block-row__item {
+        padding: 0 5px;
+    }
+}
+
+@media (max-width:820px){
+	.block-left {
+       display: none;
+    }    
+    .block-right{
+       display: none;
+    }    
+    .block-row {
+        margin: 0 auto;  
+    }
+    .block-row__item {       
+        padding: 0 70px;
+        max-width: 100%;
+        border: hotpink 1px solid;
+    }
+    .block-row__item-title1 {       
+        margin-bottom: 30px;
+        
+    }
+    
 }
 
 @media (max-width:600px){
-	
+    .block-row__item {       
+        padding: 0 40px;       
+    }
 }
 
-@media (max-width:500px){
-	
+@media (max-width:481px){
+	.block-row__item-title1 {       
+        margin-bottom: 10px;
+        
+    }
+    @media (max-width:600px){
+        .block-row__item {       
+            padding: 0 40px;
+            max-width: 100%;
+            border: hotpink 1px solid;
+        }
+    }
+    @media (max-width:600px){
+        .block-row__item {       
+            padding: 0 20px;
+        }
+    }
 }
+
+
 
 @media (max-width:420px){
+	
+}
+
+
+@media (max-width:320px){
 	
 }
