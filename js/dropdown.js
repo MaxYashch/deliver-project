@@ -67,8 +67,8 @@ document.addEventListener('keyup', (e) => {
 
 // form-body dropdown
 
-let expressDropList = document.querySelector('.form-body__item-list-active');
-let expressDropButton = document.querySelector('.form-body__item-button');
+let expressDropList = document.querySelector('.js-form-body__act1');
+let expressDropButton = document.querySelector('.js-form-body__btn1');
 expressDropButton.addEventListener('click', () => {
     if (expressDropList.classList.contains('form-body__item-list-active-dropdown')) {
         expressDropList.classList.remove('form-body__item-list-active-dropdown');
@@ -82,8 +82,8 @@ document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { expressDropList.classList.remove('form-body__item-list-active-dropdown') }
 })
 // form-body dropdown 2
-let expressDropList2 = document.querySelector('.form-body__item-list-active-two');
-let expressDropButton2 = document.querySelector('.form-body__item-button-two');
+let expressDropList2 = document.querySelector('.js-form-body__act2');
+let expressDropButton2 = document.querySelector('.js-form-body__btn2');
 expressDropButton2.addEventListener('click', () => {
     if (expressDropList2.classList.contains('form-body__item-list-active-dropdown')) {
         expressDropList2.classList.remove('form-body__item-list-active-dropdown');
@@ -98,8 +98,8 @@ document.addEventListener('keyup', (e) => {
 })
 
 // form-body dropdown3
-let expressDropList3 = document.querySelector('.form-body__item-list-active-three');
-let expressDropButton3 = document.querySelector('.form-body__item-button-three');
+let expressDropList3 = document.querySelector('.js-form-body__act3');
+let expressDropButton3 = document.querySelector('.js-form-body__btn3');
 expressDropButton3.addEventListener('click', () => {
     if (expressDropList3.classList.contains('form-body__item-list-active-dropdown')) {
         expressDropList3.classList.remove('form-body__item-list-active-dropdown');
@@ -114,8 +114,8 @@ document.addEventListener('keyup', (e) => {
 })
 
 // form-body dropdown4
-let expressDropList4 = document.querySelector('.form-body__item-list-active-four');
-let expressDropButton4 = document.querySelector('.form-body__item-button-four');
+let expressDropList4 = document.querySelector('.js-form-body__act4');
+let expressDropButton4 = document.querySelector('.js-form-body__btn4');
 expressDropButton4.addEventListener('click', () => {
     if (expressDropList4.classList.contains('form-body__item-list-active-dropdown')) {
         expressDropList4.classList.remove('form-body__item-list-active-dropdown');
