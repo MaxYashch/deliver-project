@@ -1496,31 +1496,19 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
     padding: 18px 0 12px 0;
     padding-left: 9%; }
+  .form-body__item-list-active {
+    padding: 15px 55px 15px 22px;
+    margin: -20px 40px 40px 40px; }
   .form-body__item-list-active-title {
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 24px;
-    color: #ffffff;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    margin-bottom: 10px; }
+    font-size: 14px; }
   .form-body__item-list-active-points ul li a {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    position: relative;
     font-size: 14px;
-    letter-spacing: 1px;
     line-height: 27px;
-    color: #ffffff;
-    font-family: Poppins, Arial, Helvetica, sans-serif;
-    margin-left: 22px; } }
+    margin-right: 0%; } }
 
 @media (max-width: 380px) {
   .form-body__item-title {
-    padding: 14px 0 12px 0;
+    padding: 14px 0 8px 0;
     padding-left: 9%; } }
 
 @media (max-width: 340px) {
