@@ -2,12 +2,12 @@
 	<div class="header-top">
 		<div class="container">
 			<div class="header-top__row">
-				<div class="top-lang dropdown">
-					<button onclick="myFunction()" class="top-lang__value dropbtn">
-						<span class="dropbtn">English</span>
-						<img src="img/arrow-red.png" alt="" class="arrow-red dropbtn">
+				<div class="header-top-item dropdown">
+					<button onclick="myFunction()" class="header-top-item__value langDropbtn">
+						<span class="langDropbtn">English</span>
+						<img src="img/arrow-red.png" alt="" class="arrow-red langDropbtn">
 					</button>
-					<div id="myDropdown" class="top-lang__item-list dropdown-content">
+					<div id="myDropdown" class="header-top-item__item-list dropdown-content">
 						<a href="#">Russian</a>
 						<a href="#">Polish</a>
 					</div>
@@ -15,9 +15,9 @@
 
 
 
-				<div class="top-right">
-					<div class="top-center">
-						<a href="" class="top-center-link">
+				<div class="header-top-right">
+					<div class="header-top-center">
+						<a href="" class="header-top-center-link">
 							<img src="img/contact-center.png" alt="" />
 							<span>Contact Center</span>
 						</a>
@@ -25,12 +25,13 @@
 
 
 
-					<div class="top-lang">
-						<button onclick="Country()" class="top-lang__value Countrybtn">
+					<div class="header-top-item">
+						<button onclick="Country()" class="header-top-item__value Countrybtn">
 							<span class="Countrybtn">Country Profile</span>
 							<img src="img/arrow-red.png" alt="" class="arrow-red Countrybtn">
 						</button>
-						<div id="myDropdownCountry" class="top-lang__item-list dropdown-content-country">
+						<div id="myDropdownCountry"
+							class="header-top-item__item-list js-header-country-top-item__item-list dropdown-content-country">
 							<a href="#">Russia</a>
 							<a href="#">Poland</a>
 							<a href="#">England</a>
@@ -54,7 +55,7 @@
 				</div>
 
 
-				<div class="header__burger">
+				<div class="header-burger">
 					<span></span>
 				</div>
 
@@ -62,19 +63,19 @@
 				<div class="header-bottom-menu">
 					<nav class="header-bottom__items">
 						<ul class="header-bottom__list">
-							<li><a href="#" class="menu__link">Express</a></li>
-							<li><a href="#" class="menu__link menu__link--long">Parcel & Ecommerce</a></li>
-							<li><a href="#" class="menu__link">Logistics</a></li>
-							<li><a href="#" class="menu__link">Mail</a></li>
-							<li><a href="#" class="menu__link">Press</a></li>
-							<li><a href="#" class="menu__link">About</a></li>
+							<li><a href="#" class="header-menu-link">Express</a></li>
+							<li><a href="#" class="header-menu-link header-menu-link--long">Parcel & Ecommerce</a></li>
+							<li><a href="#" class="header-menu-link">Logistics</a></li>
+							<li><a href="#" class="header-menu-link">Mail</a></li>
+							<li><a href="#" class="header-menu-link">Press</a></li>
+							<li><a href="#" class="header-menu-link">About</a></li>
 						</ul>
 					</nav>
 				</div>
 
 
 				<div class="header-bottom-search-form">
-					<button type="submit" class="header-bottom-search-form__submit">
+					<button type="submit" class="header-bottom-search-form__submit btn_active">
 						<img src="img/search.png" alt="">
 					</button>
 				</div>
@@ -87,7 +88,7 @@
 		<div class="container">
 			<div class="header-search-field">
 				<input type="text" class="header-search-field__text" placeholder="Search for ...">
-				<button type="submit" class="header-search-field__button">Search</button>
+				<button type="submit" class="header-search-field__button btn_active">Search</button>
 			</div>
 		</div>
 	</div>

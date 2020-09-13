@@ -1,13 +1,13 @@
+
+
+
 // header burger
 $(document).ready(function () {
-    $('.header__burger').click(function (event) {
-        $('.header__burger,.header-bottom-menu,.mainblock__title,.header-bottom-search-form').toggleClass('active');
+    $('.header-burger').click(function (event) {
+        $('.header-burger,.header-bottom-menu,.mainblock__title,.header-bottom-search-form').toggleClass('active');
         $('body').toggleClass('lock');
     });
 });
-
-
-
 
 // searchbar
 

@@ -49,13 +49,9 @@
     flex-direction: column;
     flex: 1 1 auto;
     padding: 0 15px;
-    // margin: -15px;
-    // padding: 15px;
-    width: 50%;               // почему не работает ?
 }
 
-.block-row__item-title {
-    
+.block-row__item-title {    
     font-size: calc(14px + 6 * ((100vw - 320px) / (1180 - 320)));
     letter-spacing: 1px;
     line-height: 24px;
@@ -135,10 +131,8 @@
         border: hotpink 1px solid;
     }
     .block-row__item-title1 {       
-        margin-bottom: 30px;
-        
-    }
-    
+        margin-bottom: 30px;        
+    }    
 }
 
 @media (max-width:600px){

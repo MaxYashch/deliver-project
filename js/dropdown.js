@@ -4,9 +4,8 @@ function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 // Close the dropdown menu if the user clicks outside of it
-
 window.addEventListener("click", function (event) {
-    if (!event.target.matches('.dropbtn')) {
+    if (!event.target.matches('.langDropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
@@ -17,7 +16,9 @@ window.addEventListener("click", function (event) {
         }
     }
 });
-
+document.addEventListener('keyup', (e) => {
+    if (e.keyCode == 27) { document.querySelector('.header-top-item__item-list').classList.remove('show') }
+})
 
 
 function Country() {
@@ -37,6 +38,9 @@ window.addEventListener("click", function (event) {
         }
     }
 });
+document.addEventListener('keyup', (e) => {
+    if (e.keyCode == 27) { document.querySelector('.js-header-country-top-item__item-list').classList.remove('show') }
+})
 
 
 // worldwide dropdown
@@ -47,84 +51,34 @@ function worldwideDropdown() {
     c.classList.toggle('wwDropdown');
 }
 
-// window.addEventListener("click", function (event) {
-//     if (!event.target.matches('.tem-worldwide__button')) {
-//         var dropdowns = document.getElementsByClassName("dropdown-content");
-//         var t;
-//         for (t = 0; t < dropdowns.length; t++) {
-//             var openDropdown = dropdowns[ t ];
-//             if (openDropdown.classList.contains('show')) {
-//                 openDropdown.classList.remove('show');
-//             }
-//         }
-//     }
-// });
-
 document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { document.querySelector('.item-worldwide__select-item-list').classList.remove('wwDropdown') }
 })
 
 
-// form-body dropdown
 
-let expressDropList = document.querySelector('.js-form-body__act1');
-let expressDropButton = document.querySelector('.js-form-body__btn1');
-expressDropButton.addEventListener('click', () => {
-    if (expressDropList.classList.contains('form-body__item-list-active-dropdown')) {
-        expressDropList.classList.remove('form-body__item-list-active-dropdown');
-    }
-    else {
-        expressDropList.classList.add('form-body__item-list-active-dropdown')
-    }
-})
+let formArray = document.querySelectorAll('.form-body__item');
+console.log(formArray);
+let fd = document.querySelectorAll('.js-form-body__act');
 
-document.addEventListener('keyup', (e) => {
-    if (e.keyCode == 27) { expressDropList.classList.remove('form-body__item-list-active-dropdown') }
-})
-// form-body dropdown 2
-let expressDropList2 = document.querySelector('.js-form-body__act2');
-let expressDropButton2 = document.querySelector('.js-form-body__btn2');
-expressDropButton2.addEventListener('click', () => {
-    if (expressDropList2.classList.contains('form-body__item-list-active-dropdown')) {
-        expressDropList2.classList.remove('form-body__item-list-active-dropdown');
-    }
-    else {
-        expressDropList2.classList.add('form-body__item-list-active-dropdown')
-    }
-})
+function formDropdown() {
+    for (let i = 0; i <= formArray.length; i++) {
+        formArray[ i ].onclick = fDD;
+        function fDD() {
+            fd[ i ].classList.toggle('form-body__item-list-active-dropdown')
+            for (let j = 0; j <= formArray.length; j++) {
+                console.log(j);
+                if (i !== j) {
+                    if (fd[ j ].classList.contains('form-body__item-list-active-dropdown')) {
+                        fd[ j ].classList.remove('form-body__item-list-active-dropdown');
+                    }
+                }
+            }
 
-document.addEventListener('keyup', (e) => {
-    if (e.keyCode == 27) { expressDropList2.classList.remove('form-body__item-list-active-dropdown') }
-})
-
-// form-body dropdown3
-let expressDropList3 = document.querySelector('.js-form-body__act3');
-let expressDropButton3 = document.querySelector('.js-form-body__btn3');
-expressDropButton3.addEventListener('click', () => {
-    if (expressDropList3.classList.contains('form-body__item-list-active-dropdown')) {
-        expressDropList3.classList.remove('form-body__item-list-active-dropdown');
+        }
+        document.addEventListener('keyup', (e) => {
+            if (e.keyCode == 27) { fd[ i ].classList.remove('form-body__item-list-active-dropdown') }
+        })
     }
-    else {
-        expressDropList3.classList.add('form-body__item-list-active-dropdown')
-    }
-})
-
-document.addEventListener('keyup', (e) => {
-    if (e.keyCode == 27) { expressDropList3.classList.remove('form-body__item-list-active-dropdown') }
-})
-
-// form-body dropdown4
-let expressDropList4 = document.querySelector('.js-form-body__act4');
-let expressDropButton4 = document.querySelector('.js-form-body__btn4');
-expressDropButton4.addEventListener('click', () => {
-    if (expressDropList4.classList.contains('form-body__item-list-active-dropdown')) {
-        expressDropList4.classList.remove('form-body__item-list-active-dropdown');
-    }
-    else {
-        expressDropList4.classList.add('form-body__item-list-active-dropdown')
-    }
-})
-
-document.addEventListener('keyup', (e) => {
-    if (e.keyCode == 27) { expressDropList4.classList.remove('form-body__item-list-active-dropdown') }
-})
+}
+formDropdown();
