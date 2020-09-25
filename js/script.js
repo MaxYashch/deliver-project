@@ -1,6 +1,3 @@
-
-
-
 // header burger
 $(document).ready(function () {
     $('.header-burger').click(function (event) {
@@ -10,7 +7,6 @@ $(document).ready(function () {
 });
 
 // searchbar
-
 let searchbar = document.querySelector('.header-search');
 let searchbutton = document.querySelector('.header-bottom-search-form__submit');
 searchbutton.addEventListener('click', () => {

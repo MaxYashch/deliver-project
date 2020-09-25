@@ -1,9 +1,8 @@
-
 // header language
 function myFunction() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
-// Close the dropdown menu if the user clicks outside of it
+
 window.addEventListener("click", function (event) {
     if (!event.target.matches('.langDropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -16,6 +15,7 @@ window.addEventListener("click", function (event) {
         }
     }
 });
+
 document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { document.querySelector('.header-top-item__item-list').classList.remove('show') }
 })
@@ -24,7 +24,6 @@ document.addEventListener('keyup', (e) => {
 function Country() {
     document.getElementById("myDropdownCountry").classList.toggle("show");
 }
-// Close the dropdown menu if the user clicks outside of it
 
 window.addEventListener("click", function (event) {
     if (!event.target.matches('.Countrybtn')) {
@@ -38,9 +37,11 @@ window.addEventListener("click", function (event) {
         }
     }
 });
+
 document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { document.querySelector('.js-header-country-top-item__item-list').classList.remove('show') }
 })
+
 
 
 // worldwide dropdown
@@ -55,30 +56,31 @@ document.addEventListener('keyup', (e) => {
     if (e.keyCode == 27) { document.querySelector('.item-worldwide__select-item-list').classList.remove('wwDropdown') }
 })
 
+let initAccordeons = () => {
+    $('.js-accordeon-item__head').on('click', function () {
+        let t = $(this);
+        let item = t.closest('.js-accordeon-list__item');
+        let body = item.find('.js-accordeon-item__body');
+        let accordeon = t.closest('.js-accordeon-list');
 
-
-let formArray = document.querySelectorAll('.form-body__item');
-console.log(formArray);
-let fd = document.querySelectorAll('.js-form-body__act');
-
-function formDropdown() {
-    for (let i = 0; i <= formArray.length; i++) {
-        formArray[ i ].onclick = fDD;
-        function fDD() {
-            fd[ i ].classList.toggle('form-body__item-list-active-dropdown')
-            for (let j = 0; j <= formArray.length; j++) {
-                console.log(j);
-                if (i !== j) {
-                    if (fd[ j ].classList.contains('form-body__item-list-active-dropdown')) {
-                        fd[ j ].classList.remove('form-body__item-list-active-dropdown');
-                    }
-                }
-            }
-
+        if (item.hasClass('open')) {
+            item.removeClass('open');
+            body.show().slideUp(500);
+        } else {
+            item.addClass('open');
+            body.hide().slideDown(500);
         }
-        document.addEventListener('keyup', (e) => {
-            if (e.keyCode == 27) { fd[ i ].classList.remove('form-body__item-list-active-dropdown') }
-        })
-    }
+
+        accordeon.find('.js-accordeon-list__item.open')
+            .not(item)
+            .removeClass('open')
+            .find('.js-accordeon-item__body')
+            .show()
+            .slideUp(500);
+    })
 }
-formDropdown();
+
+$(document).ready(() => {
+
+    initAccordeons()
+})

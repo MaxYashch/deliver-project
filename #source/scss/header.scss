@@ -8,7 +8,7 @@
 }
 
 .header-top__row {
-	@include flexbox();
+	display: flex;
 	justify-content:space-between;
 	align-items: flex-start;
 }
@@ -63,7 +63,7 @@
 
 
 .header-top-right{		
-	@include flexbox();	
+	display: flex;	
 }
 
 .header-top-center-link {			
@@ -87,15 +87,14 @@
 
 
 // BOTTOM
-
 .header-bottom {	
 	background-color: #ffcc00;
 	padding: 30px 0;
 	z-index: 10;	
 }
 
-.inner-container{	
-	@include flexbox();
+.inner-container {	
+	display: flex;
 	justify-content: space-between;
 	position: relative;
 	z-index: 1;
@@ -106,12 +105,12 @@
 	margin-left: 0;
 }
 
-.header-bottom-menu{	
+.header-bottom-menu {	
 	margin: 16px 0px 14px 0px;
 }
 
 .header-bottom__list {
-	@include flexbox();
+	display: flex;
 	justify-content: space-between;
 }
 
@@ -119,20 +118,20 @@
 	margin-right: 30px;
 }
 
-@media (max-width:930px){	
+@media (max-width:930px) {	
 	.header-bottom__list li {
 		margin-right: 10px;
 	}
 }
 
-@media (max-width:810px){	
+@media (max-width:810px) {	
 	.header-bottom__list li {
 		margin-right: 5px;
 	}
 }
 
 .header-menu-link {
-	@include flexbox();	
+	display: flex;	
 	color: #ba0000;
 	font-family: $Poppins;
 	font-size: 14px;	
@@ -158,19 +157,19 @@
   	transform-origin: left;
 }
 
-@media (max-width:1003px){
+@media (max-width:1003px) {
 	.header-menu-link {		
 		padding: 10px 10px;
 	}
 }
 
-@media (max-width:944px){	
+@media (max-width:944px) {	
 	.header-menu-link {		
 		padding: 10px 5px;
 	}
 }
 
-@media (max-width:935px){	
+@media (max-width:935px) {	
 	.header-menu-link {		
 		padding: 10px 7px;
 	}
@@ -182,6 +181,7 @@
 	transform: scaleX(0);
 	transform-origin: right;
 }
+
 
 
 // SEARCH BUTTON
@@ -227,7 +227,7 @@
 }
 
 .header-search-field {
-	@include flexbox();
+	display: flex;
 	justify-content: flex-end;
 	height: 40px;
 	width: 100%;
@@ -265,13 +265,13 @@
 	display: none;
 }
 
-@media (max-width:772px){
+@media (max-width:772px) {
 	body.lock{
 		overflow: hidden;
 	}
 	
 	.inner-container{		
-		@include flexbox();
+		display: flex;
 		justify-content: flex-start;
 		align-items: center;				
 	}
@@ -279,19 +279,22 @@
 	.header-bottom {
 		padding: 10px 0;
 	}
+
 	.header-top { 
 		padding: 10px 0;
 	}
+
 	.header-bottom__logo {
 		margin-top: 0;
 		margin-right: auto;		
 	}
+
 	.header-bottom-search-form__submit {
-		// margin: 5px 0 0 0;
 		height: 40px;
 		width: 40px;
 		
 	}
+
 	.header-bottom-search-form {
 		margin-right: 0;
 	}
@@ -312,7 +315,8 @@
 		z-index: 3;
 		cursor: pointer;
 	}
-	.header-burger span{
+
+	.header-burger span {
 		position: absolute;
 		background-color: #fff;
 		right: 0;
@@ -321,8 +325,9 @@
 		top: 9px;
 		transition: all 0.3s ease 0s;
 	}
+
 	.header-burger:before,        /*рисуем полосы бургер меню*/
-	.header-burger:after{
+	.header-burger:after {
 		content: '';
 		background-color: #fff;
 		position: absolute;
@@ -331,32 +336,35 @@
 		left: 0;
 		transition: all 0.5s ease 0s;
 	}
-	.header-burger:before{
+
+	.header-burger:before {
 		top: 0;
 	}
-	.header-burger:after{
+	
+	.header-burger:after {
 		bottom: 0;
 	}
 
-	.header-burger.active span{
+	.header-burger.active span {
 		transform: scale(0);
 	}
 
-	.header-burger.active:before{
+	.header-burger.active:before {
 		transform:rotate(45deg);
 		top: 9px;
 	}
-	.header-burger.active:after{
+
+	.header-burger.active:after {
 		transform:rotate(-45deg);
 		bottom: 9px;
 	}
 
-	.header-burger.active{
+	.header-burger.active {
 		overflow: hidden;
 		margin-right: 0px;
 	}
 	
-	.header-bottom-menu{
+	.header-bottom-menu {
 		display: none;
 	}
 
@@ -369,7 +377,7 @@
 		width: 100%;
 		height: 100%;
 		overflow: auto;
-		transition: all 0.3s ease 0s;
+		transition: 0.2s;
 		background-color: #ffcc00;
 		padding: 70px 10px 20px 10px;
 		z-index: 3;
@@ -383,7 +391,7 @@
 		display: block;
 	}
 
-	.header-bottom__list li{
+	.header-bottom__list li {
 		
 		margin: 0px 0px 20px 0px;
 	}
@@ -396,25 +404,7 @@
 	}
 }
 
-// @media (max-width:653px){
-// 	.header-burger {		
-// 		margin-right: -55%;
-// 	}
-// }
-
-// @media (max-width:600px){
-// 	.header-burger {		
-// 		margin-right: -50%;
-// 	}
-// }
-
-// @media (max-width:510px){
-// 	.header-burger {		
-// 		margin-right: -40%;
-// 	}
-// }
-
-@media (max-width:420px){	
+@media (max-width:420px) {	
 	.header-top-center-link {			
 		display: none;
 	}
